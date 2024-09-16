@@ -1,0 +1,198 @@
+@charset "ISO-8859-1";
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #005999;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #007acc;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2, h3 {
+    color: #003366;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #003366;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e9f5ff;
+}
+
+/* Transaction Links */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 15px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #003366;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #005999;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding : 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    ul li {
+        font-size: 1em;
+    }
+}
+
+/* Transaction Links Styles */
+ul.transaction-links {
+    display: flex;
+    justify-content: space-around; /* Distributes the buttons evenly */
+    flex-wrap: wrap; /* Allows the buttons to wrap on smaller screens */
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul.transaction-links li {
+    list-style: none;
+}
+
+ul.transaction-links a {
+    display: inline-block;
+    width: 180px; /* Set uniform width for all buttons */
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007acc;
+    padding: 15px 0; /* Make the buttons tall enough */
+    border-radius: 5px;
+    font-size: 1.1em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px; /* Adds space between rows on smaller screens */
+}
+
+ul.transaction-links a:hover {
+    background-color: #005999;
+}
+
+/* Ensure buttons look good on smaller screens */
+@media (max-width: 768px) {
+    ul.transaction-links {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center;
+    }
+
+    ul.transaction-links a {
+        width: 80%; /* Make the buttons fit the screen size */
+    }
+}
